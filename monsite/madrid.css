@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto',sans-serif;
+}
+.corps{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/madrid03.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+
+.tete{
+    height: 12%;
+    display: flex;
+    align-items: center;
+
+
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.nav{
+    flex: 1;
+    text-align: right;
+    margin-top: 20px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15;
+    margin: 10px;
+
+}
+.ligne{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.colonne{
+    flex-basis: 50%;
+}
+p{
+    color: white;
+    font-size: 16px;
+    line-height: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    width: 180px;
+    color: goldenrod;
+    background-color: orange;
+    font-size: 12px;
+    padding: 12px 0;
+    background: white;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 30px;
+    transition-duration: 2s 2s;
+    background-color: blue;
+}
+button:hover{
+    transform: rotateY(40deg);
+    color: rgb(255, 187, 0);
+}
+.photo{
+    width: 300px;
+    height: 230px;
+    display: inline-block;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px ;
+    background-position: center;
+    background-size: cover;
+    transition-delay: 0s 1s;
+    transition-duration: 1s;
+    transition: 1s all ease-in-out;
+}
+.photo1{
+    background-image: url(Img/madrid00.jpg);
+}
+.photo2{background-image: url(Img/madrid02.jpg);}
+.photo3{background-image: url(Img/madrid04.jpg);}
+.photo4{background-image: url(Img/madrid05.jpg);}
+.photo5{background-image: url(Img/madrid03.jpg);}
+.photo6{background-image: url(Img/madrid06.jpg);}
+
+.photo:hover{
+    transform: rotateX(90deg);
+}
+
+h1{
+    color: antiquewhite;
+}
+@keyframes move {
+    0% { left: 0; }
+    50% { left: calc(100% - 100px); }
+    100% { left: 0; }
+  }
+  
+video {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    animation: move 30s linear infinite; 
+  }
